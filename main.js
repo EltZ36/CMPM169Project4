@@ -73,6 +73,7 @@ function draw() {
    }
    if(vol > 0.02){
     fishOne[i].setSpeed(random(3, 8))
+    fishOne[i].vx = random(0, 0.5)
    }
   if(millis() - lastTimer >= 2000){
     if(fishOne[i].vx < 0){
